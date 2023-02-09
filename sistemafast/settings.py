@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'sistemafast.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sistemafast2',
+        'NAME': 'sistemafast3',
         'USER': 'postgres',
         'PASSWORD': 'mpgdk2001',
         'HOST': '127.0.0.1',
