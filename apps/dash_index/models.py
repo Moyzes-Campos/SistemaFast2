@@ -73,7 +73,6 @@ class Integrantes(models.Model):
     nome = models.CharField(max_length=50)
     funcao = models.CharField(max_length=50, choices=funcao_choices)
     area = models.CharField(max_length=50, choices=areas)
-    foto = StdImageField('foto', upload_to='integrantes', blank=True, null=True)
     user = models.OneToOneField(User, on_delete=models.PROTECT)
 
     class Meta:
