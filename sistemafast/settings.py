@@ -56,6 +56,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sistemafast.wsgi.application'
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -64,6 +65,14 @@ DATABASES = {
         'PASSWORD': 'mpgdk2001',
         'HOST': '127.0.0.1',
         'PORT': '5432',
+    }
+}
+"""
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
