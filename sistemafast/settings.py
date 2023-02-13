@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-eavi+7(lt!k9)wnii10n!#um)@$h729@okj38ij==jqqgi7)cy
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['3.209.65.162']
 
 INSTALLED_APPS = [
     'jazzmin',
@@ -105,10 +105,6 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'arquivos/')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/'),
-]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
