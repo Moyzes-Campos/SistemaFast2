@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from stdimage import StdImageField
 
 areas = (
     ('Aerodinâmica', 'Aerodinâmica'),
@@ -73,6 +74,7 @@ class Integrantes(models.Model):
     funcao = models.CharField(max_length=50, choices=funcao_choices)
     area = models.CharField(max_length=50, choices=areas)
     user = models.OneToOneField(User, on_delete=models.PROTECT)
+    foto = StdImageField('foto', upload_to='integrantes', blank=True, null=True)
 
     class Meta:
         verbose_name = 'Integrante'
