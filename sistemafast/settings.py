@@ -3,9 +3,6 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-eavi+7(lt!k9)wnii10n!#um)@$h729@okj38ij==jqqgi7)cy'
-
-DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -56,26 +53,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sistemafast.wsgi.application'
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sistemafast3',
-        'USER': 'postgres',
-        'PASSWORD': 'mpgdk2001',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
-"""
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -110,3 +87,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'index_dash'
 LOGOUT_REDIRECT_URL = 'login'
+
+from .set_param import *
