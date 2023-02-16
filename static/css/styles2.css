@@ -11426,6 +11426,9 @@ section.cta:before {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.bg-orange{
+    background-color:#ff6633;
+}
 .icon-feature {
   font-size: 4rem;
 }
