@@ -5,7 +5,6 @@ venv
 gestao_rh/__pycache__/
 SistemaUTFast.pem
 sistemafast.pem
-static
 media
 migrations
 set_param.py
